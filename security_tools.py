@@ -1,6 +1,7 @@
 import random
 import string
 
+# validate_password checks if the password meets the criteria of having at least 8 characters, containing at least one digit, one letter, and one symbol.
 def validate_password(password):
     if len(password) < 8:
         return False, "Password must be at least 8 characters long."
@@ -26,6 +27,7 @@ def validate_password(password):
 
     return True, "Password is valid"
 
+# validate_ip checks if the IP address is valid by ensuring it has four parts separated by dots, and each part is a number between 0 and 255.
 def validate_ip(ip):
     ip = ip.strip()
 
@@ -47,6 +49,7 @@ def validate_ip(ip):
 
     return True, "IP address is valid"
 
+# generate_password creates a random password that meets the criteria of having at least one lowercase letter, one uppercase letter, one digit, and one symbol, with a total length between 10 and 16 characters.
 def generate_password():
     length = random.randint(10, 16)
 
