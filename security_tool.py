@@ -1,8 +1,10 @@
+# Security Tool
 def security_event_counter():
     password = "Prog4Cyber"
     correct = 0
     incorrect = 0
 
+# prompt the user to enter the password 10 times and count correct and incorrect attempts
     for i in range(10):
         user_input = input("Enter the password: ")
         if user_input == password:
@@ -26,12 +28,13 @@ def security_event_counter():
     else:
         print("Access attempts are within acceptable limits.")
 
-
+# Brute-Force Simulation
 def brute_force_simulation():
     password = "UWS242"
     max_attempts = 5
     attempts = 0
 
+# prompt the user to enter the password and simulate a brute-force attack
     while attempts < max_attempts:
         user_input = input("Enter the password: ")
         if user_input == password:
@@ -43,13 +46,14 @@ def brute_force_simulation():
 
     print("Simulation failed. Maximum attempts reached.")
 
-
+# Login Authentication
 def login_authentication():
     username = "admin"
     password = "06LK"
     attempts = 0
     max_attempts = 3
 
+# prompt the user to enter the username and password and simulate a login authentication
     while attempts < max_attempts:
         username_input = input("Enter the username: ")
         if username_input != username:
@@ -66,7 +70,7 @@ def login_authentication():
 
     print("Account locked for 24 hours.")
 
-
+# Main function to run the security tool
 def main():
     while True:
         print("\n===== SECURITY TOOL =====")
