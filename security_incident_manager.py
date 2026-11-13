@@ -19,3 +19,8 @@ print(incident["risk_level"])
 # remove the event_type field from the incident
 del incident["event_type"]
 
+for key, value in incident.items():
+    print(key, ":", value)
+
+# show the total number of fields
+print("total fields", len(incident))
